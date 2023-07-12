@@ -25,10 +25,12 @@ Once the front-end was completed, the notification UnfinishedTaskNotification wa
 
 A proper Queue worker should be used when deploying the application, otherwise the delay won't be taken into consideration and the notification will be sent straightaway.
 
+The mail server used for development has been Mailhog, which runs on port 1025. If a different configuration is to be used, make sure the .env file is updated accordingly.
+
 ## Challenges/Trade-offs
 
 I wanted to make sure I used the latest stable Laravel version (10.10 in this case), and I knew there were tools that would provide all the scaffolding for this type of application, so I tried to use them as well. That's why I chose Laravel Breeze.
 
-The biggest challenge has been the usage of Tailwind, because I'm used to using Twitter Bootstrap, and in Tailwind there are no pre-fabricated components: they need to be created one by one. I used it because Laravel Breeze uses Tailwind by default and I wanted to follow Laravel's recommended way instead of installing external packages.
+The biggest challenge has been the usage of Tailwind, because I'm used to Twitter Bootstrap, and in Tailwind there are no pre-fabricated components: they need to be created one by one. I used it because Laravel Breeze uses Tailwind by default and I wanted to follow Laravel's recommended way instead of installing external packages.
 
 Since the primary interest of this small application was just to showcase the usage of Laravel with a Vue front-end, many features and usability enhancements have been ommited, although they would be absolutely necessary if the application was to be deployed in a real live environment.
